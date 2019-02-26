@@ -1,3 +1,6 @@
 #!/bin/bash
-message='Bonjour JD'
-echo $message
+if [ $# == 0 ]
+then
+  echo "Bonjour $USER"
+else
+  echo "Bonjour $1"
